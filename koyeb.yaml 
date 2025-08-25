@@ -1,0 +1,12 @@
+[build]
+builder = "paketobuildpacks/builder-jammy-base"
+
+[[build.buildpacks]]
+uri = "docker://ghcr.io/koyeb/buildpack/rust"
+
+[build.env]
+RUST_LOG = "info"
+
+[[routes]]
+protocol = "http"
+port = 8080

@@ -1,8 +1,7 @@
 [package]
 name = "mexalydocs"
 version = "0.1.0"
-edition = "2024"
-
+edition = "2021"  # This should be 2021, not 2024
 
 [workspace]
 members = [".", "entity", "migration"]
